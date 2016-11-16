@@ -54,11 +54,13 @@ public class ForEachExample {
         items.put("F", 60);
 
         items.forEach((k,v)->System.out.println("Item : " + k + " Count : " + v));
+        System.out.println();
 
         items.forEach((k,v)->{
             System.out.println("Item : " + k + " Count : " + v);
             if("E".equals(k)){
-                System.out.println("Value E");
+                //System.out.println("Value E");
+                System.out.println("values is : " + v);
             }
         });
 
